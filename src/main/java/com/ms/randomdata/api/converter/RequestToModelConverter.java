@@ -1,6 +1,6 @@
 package com.ms.randomdata.api.converter;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -44,7 +44,7 @@ public class RequestToModelConverter {
 		Info reqInfo = requestResult.getInfo();
 		converter.infoConverter(reqInfo, modelInfo);
 
-		List<com.ms.randomdata.api.models.Result> modelResultList = new ArrayList<>();
+//		List<com.ms.randomdata.api.models.Result> modelResultList = new ArrayList<>();
 
 		List<RequestResult> results = requestResult.getResults();
 
