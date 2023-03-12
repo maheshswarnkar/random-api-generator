@@ -14,8 +14,7 @@ public class RandomDataApiGeneratorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RandomDataApiGeneratorApplication.class, args);
-		System.out.println("Application is started");
-
+		System.out.println("Application is started..");
 	}
 
 }

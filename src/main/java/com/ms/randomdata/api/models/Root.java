@@ -1,5 +1,7 @@
 package com.ms.randomdata.api.models;
 
+import java.math.BigInteger;
+
 import jakarta.persistence.AttributeOverride;
 import jakarta.persistence.AttributeOverrides;
 import jakarta.persistence.Column;
@@ -19,10 +21,11 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "random_api_data")
 public class Root {
-
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
+	private BigInteger msUniqueId;
+	
+	private int reqRecords;
 
 	@Embedded
 	public Result result;
@@ -33,5 +36,18 @@ public class Root {
 			@AttributeOverride(name = "page", column = @Column(name = "page")),
 			@AttributeOverride(name = "version", column = @Column(name = "version")) })
 	public Info info;
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Root [msUniqueId=");
+		builder.append(msUniqueId);
+		builder.append(", result=");
+		builder.append(result);
+		builder.append(", info=");
+		builder.append(info);
+		builder.append("]");
+		return builder.toString();
+	}
 
 }

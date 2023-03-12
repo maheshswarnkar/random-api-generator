@@ -17,6 +17,12 @@ import com.ms.randomdata.api.request.objects.Result;
  */
 public class GetJsonObject {
 
+	/**
+	 * @param <T>
+	 * @param url
+	 * @param type
+	 * @return
+	 */
 	public static <T> T getJsonObjectMapper(URL url, Class<T> type) {
 		ObjectMapper mapper = new ObjectMapper();
 		try {

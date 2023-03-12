@@ -1,0 +1,8 @@
+[INFO ] 2023-03-09 08:41:02.751 [restartedMain] RandomDataApiGeneratorApplication - Starting RandomDataApiGeneratorApplication using Java 17.0.4.1 with PID 25832 (D:\swarnkar\sts-wks\sb\random-data-api\random-data-api-generator\target\classes started by MAHESH in D:\swarnkar\sts-wks\sb\random-data-api\random-data-api-generator)
+[DEBUG] 2023-03-09 08:41:02.785 [restartedMain] RandomDataApiGeneratorApplication - Running with Spring Boot v3.0.2, Spring v6.0.4
+[INFO ] 2023-03-09 08:41:02.790 [restartedMain] RandomDataApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-03-09 08:41:14.774 [restartedMain] RandomDataApiGeneratorApplication - Started RandomDataApiGeneratorApplication in 14.097 seconds (process running for 41.927)
+[INFO ] 2023-03-11 15:18:06.103 [main] RandomDataApiGeneratorApplicationTests - Starting RandomDataApiGeneratorApplicationTests using Java 17.0.4.1 with PID 37736 (started by MAHESH in D:\swarnkar\sts-wks\sb\random-data-api\random-data-api-generator)
+[DEBUG] 2023-03-11 15:18:06.122 [main] RandomDataApiGeneratorApplicationTests - Running with Spring Boot v3.0.2, Spring v6.0.4
+[INFO ] 2023-03-11 15:18:06.125 [main] RandomDataApiGeneratorApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2023-03-11 15:18:19.200 [main] RandomDataApiGeneratorApplicationTests - Started RandomDataApiGeneratorApplicationTests in 14.054 seconds (process running for 17.512)

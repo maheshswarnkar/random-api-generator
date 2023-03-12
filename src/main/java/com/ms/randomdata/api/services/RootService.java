@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,15 +20,15 @@ import com.ms.randomdata.api.request.objects.Result;
 @Service
 public class RootService {
 
+	Logger logger = LogManager.getLogger(RootService.class);
+
 	@Autowired
 	ResultRepository repository;
 
 	public void save(Root root) {
-		System.out.print("Before saving");
 		repository.save(root);
-		System.out.println("Record is saved");
 	}
-	
+
 	public static <T> T getJsonObjectMapper(URL url, Class<T> type) {
 		ObjectMapper mapper = new ObjectMapper();
 		try {
@@ -52,7 +54,9 @@ public class RootService {
 		RequestToModelConverter requestToModelObjectConverter = new RequestToModelConverter();
 		Root root = requestToModelObjectConverter.requestToModelObjectConverter(resultPojo);
 
-		System.out.println("Root \n" + root);
+//		System.out.println("Root \n" + root);
+		
+
 		return root;
 
 	}
