@@ -40,7 +40,7 @@ public class UniqeNumberFromDateTime {
 			}
 		}
 
-		System.out.println("Generated Unique Number from DateTime : " + uniqueNumber);
+//		System.out.println("Generated Unique Number from DateTime : " + uniqueNumber);
 		return (new BigInteger(uniqueNumber.toString()));
 	}
 
